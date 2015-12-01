@@ -1,19 +1,88 @@
+/* GENERAL CLASSES */
+.grey {
+  color: #BFBFBF;
+}
+
+.mustard {
+  color: #FFDB58;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER CONTENT */
 #header-wrapper {
   height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
 }
+
 #header {
   width: 100%;
   height: 100%;
   position: relative;
   box-sizing: border-box;
-  background-color: #FFDB58;
 }
 
 #header-content {
+  margin-top: 20%;
+}
+
+#question {
+  text-align: center;
+  padding: 0 10% 0 10%;
+  font-size: 52px;
+}
+
+#question-box {
+  height: 1.5em;
+  font-size: 2em;
+  border: 0;
+  width: 10%;
+  border-bottom: 0.1em solid #BFBFBF;
+  float: left;
+}
+
+#question-box-label {
+  margin-left: -1.5%;
+  font-size: 1.5em;
+}
+
+input:focus {
+  outline: 0;
+}
+.btn-group {
+  margin-top: 5%;
+}
+
+.guess-btn {
+  background-color: #fff;
+  float: left;
+  margin: 0 2% 0 2%;
+  height: 4em;
+  width: 15em;
+  text-transform: uppercase;
+  border: 2px solid #BFBFBF;
+  outline: none;
+}
+
+button:focus, button:hover {
+  background-color: #BFBFBF;
 }
 
 .content-wrapper {
   background-color: black;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  #question-box-label {
+    margin-left: -3%;
+  }
+  #question-box {
+    width: 25%;
+  }
 }
