@@ -1,5 +1,7 @@
-$(function() {
-  var selectors = {}
+document.addEventListener("DOMContentLoaded", function(){
+  var app = new App();
 
-  selectors.buttons= document.querySelectorAll(".guess-btn")
+  setTimeout(function() {
+    app.fadeHeading();
+  }, 1000);
 })
