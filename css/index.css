@@ -1,3 +1,6 @@
+html, body {
+  margin: 0;
+}
 /* GENERAL CLASSES */
 .grey {
   color: #262626;
@@ -13,6 +16,12 @@
 
 .white {
   color: #fff;
+}
+
+.superscript {
+  vertical-align: super; 
+  font-size: 0.5em;
+  display: inline;
 }
 
 .centre {
@@ -34,12 +43,16 @@
 }
 
 .story{
+  font-family: "Work Sans";
+  font-size: 1.5em;
   text-align: left;
 }
 
 .title {
-  font-size: 5em;
+  font-size: 6em;
   text-align: left;
+  font-weight: 700;
+  font-family: "PT Serif"
 }
 
 .heading {
@@ -97,11 +110,30 @@
 
 /* PAGES */
 
-#story-wrapper {
-  height: 100vh;
+#story1 {
   background-color: black;
 }
 
+#story-wrapper {
+  height: 100vh;
+  margin-left: 5%;
+  margin-right: 50%;
+}
+
+.story-title {
+  padding-top: 10%;
+}
+
+.hamza {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  line-height: 1.5em;
+}
+
+i .fa .fa-angle-down {
+  padding-left: 1em; 
+}
+          
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   #question-box-label {
