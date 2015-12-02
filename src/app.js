@@ -9,7 +9,7 @@ App.prototype.fadeHeading = function() {
   var hiddenHeading = document.querySelectorAll(".header-hidden") 
   startHeading.classList.add("hidden");
   setTimeout(function() {
-    startHeading.innerHTML = "In Syria it could be torture and death.";
+    startHeading.innerHTML = "Sometimes, it is torture and death.";
       startHeading.classList.remove("hidden")
 
   }, 1000);
@@ -29,7 +29,7 @@ App.prototype.scrollToMore = function() {
 }
 
 App.prototype.scrollToOurStory = function() {
-  scrollToElement("about-us", 1000, 0)
+  scrollToElement("#about-us", 1000, 0)
 }
 
 function scrollToElement(div, timeout, margin) {

@@ -1,6 +1,18 @@
 html, body {
   margin: 0;
 }
+
+hr {
+  margin-bottom: 5%;
+  border-color: #ffbc00;
+  width: 5%;
+  margin-left: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* GENERAL CLASSES */
 
 .grey {
@@ -35,11 +47,18 @@ html, body {
 }
 
 .caption {
+  font-family: "Work Sans";
+  padding-top: 15%;
+  line-height: 1.3em;
   margin-top: 5%;
 }
 
+#story1 .caption {
+}
+
 .picture-caption {
-  font-size: 1.7em;
+  font-size: 0.7em;
+  font-family: "Work Sans";
 }
 
 .hidden {
@@ -59,14 +78,16 @@ html, body {
 
 .title {
   font-size: 6em;
+  line-height: 1.1em;
   text-align: left;
   font-weight: 700;
   font-family: "PT Serif"
 }
 
 .heading {
-  padding: 0 10% 0 10%;
+  padding: 0 30% 0 30%;
   text-align: center;
+  font-weight: 700;
   font-size: 3.5em; 
   font-family: "PT Serif";
 }
@@ -142,34 +163,77 @@ html, body {
   margin-right: 40%;
 }
 
+#our-story .story-wrapper, #vdc-chart .story-wrapper {
+  margin-bottom: 5%;
+}
+
 .story-title {
   padding-top: 10%;
+  font-size: 1em;
+}
+
+.read-more {
+  font-size: 1em;
 }
 
 .hamza {
-  margin-top: 5%;
   margin-right: 0%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   line-height: 1.5em;
 }
 
+#story1 .hamza {
+  padding-top: 5%;
+}
+
 .text-wrapper {
-  padding-right: 40%;
+  padding-right: 30%;
 }
 
 .right {
   float: right;
   display: inline;
+  width: 50%;
+  position: relative;
+}
+
+.right img {
+  height: 100vh;
+  margin-right: 0%;
 }
 
 .left {
   float: left;
   display: inline;
+  position: relative;
+  width: 50%;
 }
 
 #vdc-chart {
   height: 100vh;
   overflow: hidden;
+}
+
+.grid-item {
+  width: 30%;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#video-wrapper {
+  background-color: #262626;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.story-wrapper-margin {
+  margin-bottom: 5%;
+}
+
+video {
+  height: 100%;
+  width: auto;
 }
 
 /* MEDIA QUERIES */
