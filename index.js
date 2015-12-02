@@ -6,4 +6,6 @@ document.addEventListener("DOMContentLoaded", function(){
   }, 3000);
 
   app.moreBtn.addEventListener("click", app.scrollToAnswer)
+  app.readMore.addEventListener("click", app.scrollToMore)
+  app.readMoreOurStory.addEventListener("click", app.scrollToOurStory)
 })

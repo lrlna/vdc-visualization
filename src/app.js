@@ -1,5 +1,7 @@
 function App() {
   this.moreBtn = document.querySelector(".more-btn")
+  this.readMore = document.querySelector("#read-more")
+  this.readMoreOurStory = document.querySelector("#read-more-our-story")
 }
 
 App.prototype.fadeHeading = function() {
@@ -20,6 +22,14 @@ App.prototype.fadeHeading = function() {
 
 App.prototype.scrollToAnswer = function() {
   scrollToElement("#story1", 1000, 0)
+}
+
+App.prototype.scrollToMore = function() {
+  scrollToElement("#story2", 1000, 0)
+}
+
+App.prototype.scrollToOurStory = function() {
+  scrollToElement("about-us", 1000, 0)
 }
 
 function scrollToElement(div, timeout, margin) {

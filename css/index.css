@@ -2,6 +2,7 @@ html, body {
   margin: 0;
 }
 /* GENERAL CLASSES */
+
 .grey {
   color: #262626;
 }
@@ -21,6 +22,9 @@ html, body {
 .superscript {
   vertical-align: super; 
   font-size: 0.5em;
+}
+
+.inline {
   display: inline;
 }
 
@@ -30,7 +34,12 @@ html, body {
   align-items: center;
 }
 
-.page {
+.caption {
+  margin-top: 5%;
+}
+
+.picture-caption {
+  font-size: 1.7em;
 }
 
 .hidden {
@@ -42,7 +51,7 @@ html, body {
   font-family: "Work Sans";
 }
 
-.story{
+.story {
   font-family: "Work Sans";
   font-size: 1.5em;
   text-align: left;
@@ -62,8 +71,9 @@ html, body {
   font-family: "PT Serif";
 }
 
-.story-wrapper {
-  margin-top: 20%;
+.text {
+  font-family: "PT Serif";
+  margin-bottom: 2%;
 }
 
 /* HEADER CONTENT */
@@ -80,7 +90,7 @@ html, body {
 }
 
 #heading-content {
-  margin-top:20%;
+  padding-top:20%;
 }
 
 .btn-group {
@@ -111,13 +121,25 @@ html, body {
 /* PAGES */
 
 #story1 {
-  background-color: black;
+  background: url("../img/classroom.png") no-repeat center center fixed;
+  background-size: cover;
+  
 }
 
-#story-wrapper {
+#our-story {
+  background: url("../img/our-story.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.story-wrapper {
   height: 100vh;
   margin-left: 5%;
-  margin-right: 50%;
+  position: relative;
+  overflow: hidden;
+} 
+
+#story1 .story-wrapper, #our-story .story-wrapper {
+  margin-right: 40%;
 }
 
 .story-title {
@@ -126,14 +148,30 @@ html, body {
 
 .hamza {
   margin-top: 5%;
+  margin-right: 0%;
   margin-bottom: 10%;
   line-height: 1.5em;
 }
 
-i .fa .fa-angle-down {
-  padding-left: 1em; 
+.text-wrapper {
+  padding-right: 40%;
 }
-          
+
+.right {
+  float: right;
+  display: inline;
+}
+
+.left {
+  float: left;
+  display: inline;
+}
+
+#vdc-chart {
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   #question-box-label {
