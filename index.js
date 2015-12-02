@@ -3,5 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   setTimeout(function() {
     app.fadeHeading();
-  }, 1000);
+  }, 3000);
+
+  app.moreBtn.addEventListener("click", app.scrollToAnswer)
 })
