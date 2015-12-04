@@ -53,6 +53,11 @@ a {
   margin-top: 5%;
 }
 
+#our-story .caption {
+  padding-top: 0%;
+}
+
+
 #story1 .caption {
 }
 
@@ -167,6 +172,10 @@ a {
   margin-bottom: 5%;
 }
 
+#about-us .story-title {
+  padding-top: 5%;
+}
+
 .story-title {
   padding-top: 10%;
   font-size: 1em;
@@ -235,7 +244,6 @@ video {
   height: 100%;
   width: auto;
 }
-
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   #question-box-label {
