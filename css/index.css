@@ -58,7 +58,8 @@ a {
 }
 
 
-#story1 .caption {
+#about-us.caption {
+  padding-top: 5%;
 }
 
 .picture-caption {
@@ -169,7 +170,7 @@ a {
 }
 
 #our-story .story-wrapper, #vdc-chart .story-wrapper {
-  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 #about-us .story-title {
@@ -200,15 +201,14 @@ a {
 }
 
 .right {
-  float: right;
-  display: inline;
-  width: 50%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
 }
 
 .right img {
-  height: 100vh;
-  margin-right: 0%;
+  height: 100%;
 }
 
 .left {
