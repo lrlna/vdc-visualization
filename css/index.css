@@ -90,6 +90,22 @@ a {
   font-family: "PT Serif"
 }
 
+#header {
+  background-color: #17223C;
+  font-family: "PT Serif";
+  width: 100vd;
+}
+
+#vdc-header {
+  font-size: 2em;
+  float: left;
+  padding: 0.3em 1em;
+}
+
+.header-item {
+  font-size: 1em;
+}
+
 .heading {
   padding: 0 30% 0 30%;
   text-align: center;
@@ -204,6 +220,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.header-items .right {
+  flex-direction: row;
+}
+
+.story-wrapper .right {
   height: 100vh;
 }
 
